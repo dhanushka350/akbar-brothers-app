@@ -1,0 +1,113 @@
+<h3 style="color: black">Trademark Search</h3>
+<div class="row">
+  <div class="col-xxxl-4 col-xxl-4 col-lg-4 col-md-4">
+    <div class="col-lg-12">
+      <h6>Filter 1</h6>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Search" class="form-control"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Criteria" class="form-control" list="countries"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxxl-4 col-xxl-4 col-lg-4 col-md-4">
+    <div class="col-lg-12">
+      <h6>Filter 2</h6>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Search" class="form-control"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Criteria" class="form-control" list="countries"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxxl-4 col-xxl-4 col-lg-4 col-md-4">
+    <div class="col-lg-12">
+      <h6>Filter 3</h6>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Search" class="form-control"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <input type="text" placeholder="Criteria" class="form-control" list="countries"/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6" style="border: black">
+    <div class="col-lg-12">
+      <h6>Expiry Date Range</h6>
+      <ng-daterangepicker [(ngModel)]="value" [options]="options"></ng-daterangepicker>
+    </div>
+  </div>
+  <div class="col-xxxl-3 col-xxl-3 col-lg-3 col-md-3" style="border: black">
+    <div class="col-lg-12">
+      <h6></h6>
+      <button class="btn btn-outline-success btn-sm" style="cursor: pointer">Export.Reg Certificate</button>
+    </div>
+  </div>
+  <div class="col-xxxl-3 col-xxl-3 col-lg-3 col-md-3" style="border: black">
+    <div class="col-lg-12">
+      <h6></h6>
+      <button style="cursor: pointer" class="btn btn-outline-primary btn-sm">Export to PDF</button>
+    </div>
+  </div>
+</div>
+<datalist id="countries">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<div class="row">
+  <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12">
+    <!--<nb-card>-->
+    <!--<nb-card-header></nb-card-header>-->
+    <!--<nb-card-body>-->
+    <table class="table">
+      <thead>
+      <tr>
+        <th style="color: black;">#</th>
+        <th style="color: black;">Logo</th>
+        <th style="color: black;">FileNo</th>
+        <th style="color: black;">AppNo</th>
+        <th style="color: black;">Brand</th>
+        <th style="color: black;">TMName</th>
+        <th style="color: black;">TMNo</th>
+        <th style="color: black;">Class</th>
+        <th style="color: black;">Company</th>
+        <th style="color: black;">Country</th>
+        <th style="color: black;">Status</th>
+        <th style="color: black;">Comment</th>
+        <th style="color: black;">Reg.Date</th>
+        <th style="color: black;">Exp.Date</th>
+        <th style="color: black;">View</th>
+      </tr>
+      </thead>
+      <tbody style="overflow-x: scroll">
+      <tr style="height: 10px;">
+        <td>1</td>
+        <td>21.03.1989</td>
+        <td>Original</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td style="color: green;"><i class="fa fa-eye"></i></td>
+      </tr>
+      </tbody>
+    </table>
+    <!--</nb-card-body>-->
+    <!--</nb-card>-->
+  </div>
+</div>
+

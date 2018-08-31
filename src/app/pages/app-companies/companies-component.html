@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6">
+    <nb-card>
+      <nb-card-header>Companies/Agents</nb-card-header>
+      <div class="col-lg-12">
+        <nb-card>
+          <nb-card-body>
+            <div class="input-group input-group-sm">
+              <input type="text" placeholder="Company Name" class="form-control"/>
+            </div>
+            <div class="input-group input-group-sm">
+              <input type="text" placeholder="Country" class="form-control" list="countries"/>
+            </div>
+            <div class="input-group input-group-sm">
+              <textarea type="text" placeholder="Address" class="form-control"></textarea>
+            </div>
+            <div class="input-group">
+              <button class="btn btn-outline-success btn-md">Save</button>
+            </div>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </nb-card>
+  </div>
+</div>
+<datalist id="countries">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<div class="row">
+  <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12">
+    <nb-card>
+      <nb-card-header></nb-card-header>
+      <nb-card-body>
+        <ng2-smart-table [settings]="settings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+                         (delete)="onDelete($event);">
+        </ng2-smart-table>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

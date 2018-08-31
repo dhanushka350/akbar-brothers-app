@@ -1,0 +1,231 @@
+<div class="row">
+  <nb-card-header>Trademark Manager</nb-card-header>
+</div>
+<div class="row">
+  <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6">
+    <br>
+    <div class="clearfix"></div>
+    <div class="input-group input-group-sm">
+      <label class="col-sm-12 col-md-12 col-lg-4" style="color: black; font-weight: bold">Main Brand Name : </label>
+      <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="brands"/>
+    </div>
+    <br>
+    <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12">
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">File Number : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Country : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="country"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Company : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="company"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Trademark Name : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="trademark"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Application No : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Trademark No : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Trademark Type : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="trademark-type"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Class : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="class"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Class Description : </label>
+        <textarea type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"
+                  disabled="disabled"></textarea>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Registry Type : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="registry-type"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Agent : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Applied on Behalf : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <br>
+      <div class="input-group input-group-sm">
+        <label class="col-lg-2" style="color: black;text-align: right;">Logo - </label>
+        <input type="file" class="col-lg-7 input-group-sm"/>
+        <button class="btn mce-btn-flat btn-success"
+                style="cursor: pointer; color: white;"><i class="fa fa-upload"></i>
+        </button>
+      </div>
+      <div class="input-group input-group-sm">
+        <img src="../../../assets/images/camera1.jpg" class="col-sm-12 col-md-12 col-lg-12"/>
+      </div>
+      <div class="input-group">
+        <label class="col-lg-10"></label>
+        <button class="btn mce-btn-flat btn-primary"
+                style="cursor: pointer; color: white;"><i class="fa fa-download"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6">
+    <div class="col-xxxl-12 col-xxl-12 col-lg-12 col-md-12">
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Application Date : </label>
+        <input type="text" id="application_date" name="application_date" bsDatepicker [(ngModel)]="application_date"
+               placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: red;text-align: right;">Expiry Date : </label>
+        <input type="text" placeholder="" name="expiry_date" id="expiry_date" bsDatepicker [(ngModel)]="expiry_date"
+               class="form-control col-sm-12 col-md-12 col-lg-8"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Step : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" list="country"/>
+        <nb-checkbox style="margin-left: 5px;">Email Notification</nb-checkbox>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Started Date : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" bsDatepicker
+               [(ngModel)]="started_date"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Due Date : </label>
+        <input type="text" placeholder="" class="form-control col-sm-12 col-md-12 col-lg-8" bsDatepicker
+               [(ngModel)]="due_date"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Remarks : </label>
+        <textarea class="form-control col-sm-12 col-md-12 col-lg-8"></textarea>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-12 col-md-12 col-lg-4" style="color: black;text-align: right;">Document/s : </label>
+        <input type="file" class="col-sm-12 col-md-12 col-lg-3" style="margin-right: 50px;"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-5 col-md-5 col-lg-5"></label>
+        <button class="btn mce-btn-flat btn-success col-sm-3 col-md-3 col-lg-3"
+                style="cursor: pointer;color: white;"><i
+          class="fa fa-upload"></i></button>
+        <label class="col-sm-1 col-md-1 col-lg-1"></label>
+        <button class="btn mce-btn-flat btn-primary col-sm-3 col-md-3 col-lg-3"
+                style="cursor: pointer; color: white;"><i class="fa fa-download"></i>
+        </button>
+      </div>
+      <div class="input-group input-group-sm">
+        <label class="col-sm-9 col-md-9 col-lg-9"></label>
+        <button class="btn btn-outline-success btn-sm" style="font-weight: bold;cursor: pointer;">UPDATE</button>
+      </div>
+      <div class="input-group input-group-sm">
+        <nb-card class="col-sm-12 col-md-12 col-lg-12">
+          <nb-card-header>Status :</nb-card-header>
+          <nb-card-body>
+            <textarea style="height: 800px; max-height: 800px; overflow-x: scroll;overflow-y: scroll;"
+                      class="col-sm-12 col-md-12 col-lg-12"></textarea>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-12 collg-12">
+  <div class="input-group">
+    <label class="col-lg-8" style="color: black;text-align: center; font-weight: bold">Reg Certificates</label>
+    <table class="table">
+      <thead>
+      <tr>
+        <th style="color: black;">#</th>
+        <th style="color: black;">Date</th>
+        <th style="color: black;">Certificate</th>
+        <th style="color: black;">Action</th>
+      </tr>
+      </thead>
+      <tbody style="overflow-x: scroll">
+      <tr style="height: 10px;">
+        <td style="color: black;">1</td>
+        <td style="color: black;">21.03.1989</td>
+        <td style="color: black;">Original</td>
+        <td style="color: green; cursor: pointer "><i class="fa fa-download"></i></td>
+      </tr>
+      <tr style="height: 10px;">
+        <td style="color: black;">1</td>
+        <td style="color: black;">21.03.1989</td>
+        <td style="color: black;">Original</td>
+        <td style="color: green; cursor: pointer"><i class="fa fa-download"></i></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="input-group" style="text-align: center">
+    <button class="btn btn-outline-success btn-sm" style="margin-right: 10px;">Save</button>
+    <button class="btn btn-outline-warning btn-sm" style="margin-right: 10px;">Edit</button>
+    <button class="btn btn-outline-danger btn-sm">Cancel</button>
+  </div>
+</div>
+
+<!--data list for searchable text fields-->
+
+
+<datalist id="brands">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="registry-type">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="class">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="trademark-type">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="country">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="company">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<datalist id="trademark">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
